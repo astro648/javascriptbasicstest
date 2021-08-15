@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>javascript intro webpage</title>
+        <script href="main.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <p>Right click, click Inspect, and then click Console to see the console.log entries from the js script section of this HTML script. Check the HTML code (script tag) to see what I am doing behind-the-scenes and to make sense of the console.logs.</p>
+        <script>
+            //Entry 1 - console.log test
+            console.log("hi");
+            //Entry 2 - console.log concatenation 1
+            var firstName="Ayaan";
+            var lastInitial="R";
+            console.log(firstName,lastInitial);
+            //Entry 3 - console.log concatenation 2
+            var fullName=firstName.concat(lastInitial);
+            console.log(fullName);
+            //Entry 4 - length of a variable
+            var length=fullName.length;
+            console.log("The length of: '",fullName,"' is",length)
+            //Entry 5 - replace specific text in a variable
+            var string="I am Ayaan R";
+            console.log(string.replace(" R",", what's your name?"));
+            //Entry 6 - uncapitalization
+            var capitalReplacerExmp="HELLO WORLD";
+            console.log(capitalReplacerExmp.toLowerCase(capitalReplacerExmp));
+        </script>
+    </body>
+</html>
